@@ -10,6 +10,7 @@ def leap_year
     puts "Please choose a year to end with."
     ending_year = gets.chomp.to_i
 
+    #Print out the year if it is divisible by 4 AND 400, but make empty string if divisible by 100 OR 400.
     if starting_year.to_i % 4 || starting_year.to_i % 400
         puts leap_year.to_i
     elsif starting_year % 100 && starting_year % 400
